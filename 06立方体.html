@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            transition: all 100s;
+        }
+        .box div {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+        .box1 {
+            background-color: #ccc;
+            transform: translateZ(-150px);
+        }
+        .box2 {
+            background-color: pink;
+            transform: translateZ(150px);
+        }
+        .box3 {
+            background-color: #ff0;
+            transform:translatex(-50%) rotateY(90deg);
+
+        }
+        .box4 {
+            background-color: #00f;
+            transform:translatex(50%) rotateY(-90deg);
+        }
+        .box5 {
+            background-color: skyblue;
+            transform:translatey(-50%) rotateX(90deg);
+        }
+        .box6 {
+            background-color: #f0f;
+            transform:translatey(50%) rotateX(-90deg);
+        }
+        .box:hover {
+            transform: rotate3d( 1,1,1,36000deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">后</div>
+        <div class="box2">前</div>
+        <div class="box3">左</div>
+        <div class="box4">右</div>
+        <div class="box5">上</div>
+        <div class="box6">下</div>
+    </div>
+</body>
+</html>

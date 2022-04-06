@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            overflow: hidden;
+            position: relative;
+            width: 923px;
+            height: 446px;
+            margin: 150px auto;
+            background-color: #000;
+        }
+        img {
+            opacity: .8;
+            transition: all .6s;
+        }
+        .mask {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 923px;
+            height: 446px;
+            background-image: linear-gradient(to top,rgba(0,0,0,.9),rgba(0,0,0,0));
+            transition: all .6s;
+        }
+        .txt {
+            position: absolute;
+            left: 30px;
+            bottom: -40px;
+            color: #fff;
+            transition: all .6s;
+        }
+        h5 {
+            font-size: 22px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .txt span {
+            color: #f00;
+        }
+        .box:hover .mask {
+            display: block;
+        }
+        .box:hover img {
+            transform:scale(1.2);
+        }
+        .box:hover .txt {
+            bottom: 40px;
+        }
+        a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 923px;
+            height: 446px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./img/matebook.jpg" alt="">
+        <div class="mask"></div>
+        <div class="txt">
+            <h4>产品</h4>
+            <h5>HUAWEI MateBook 14s</h5>
+            <p>了解详情
+                <span class="iconfont icon-youjiantou1"></span>
+            </p>
+        </div>
+        <a href="#"></a>
+    </div>
+</body>
+</html>
